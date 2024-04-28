@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build-wheels-x86:
-    runs-on: centos-7.9
+    runs-on: [self-hosted, Linux, X64]
     container:
       image: registry-1.docker.io/dashinfer/dev-manylinux-x86:v1
     strategy:
