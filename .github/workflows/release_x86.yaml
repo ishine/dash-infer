@@ -5,8 +5,8 @@ on: [push]
 jobs:
   build-wheels-x86:
     runs-on: centos-7.9
-      container:
-        image: registry-1.docker.io/dashinfer/dev-manylinux-x86:v1
+    container:
+      image: registry-1.docker.io/dashinfer/dev-manylinux-x86:v1
     strategy:
       matrix:
         python-version: [3.8, 3.9, 3.10, 3.11]
